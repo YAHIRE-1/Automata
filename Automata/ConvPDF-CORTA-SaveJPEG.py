@@ -7,7 +7,7 @@ from tkinter import Tk # Esta libreria ayuda con los cuadros de texto
 from tkinter.filedialog import askopenfilename, asksaveasfilename #Esta libreria ayuda a seleccionar el archivo PDF
 
 #Esta linea es la ruta para los archivos que convierten PDF
-poppler_path= r"C:\Users\yahir\Desktop\FusionXY Technologies\AUTOMATAS\App\poppler-0.68.0\bin"
+poppler_path= r"Agrega tu ruta a la carpeta poppler"
 
 #Esta linea es la funcion que selecciona el archivo pdf a convertir
 pdf_path = askopenfilename(title="Selecciona el archivo PDF de entrada", filetypes=[("Archivos PDF", "*.pdf")])
@@ -16,7 +16,7 @@ pdf_path = askopenfilename(title="Selecciona el archivo PDF de entrada", filetyp
 pages= convert_from_path(pdf_path= pdf_path, poppler_path=poppler_path)
 
 #Esta linea selecciona donde se van a guardar las imagenes
-saving_folder= r"C:\Users\yahir\Desktop\FusionXY Technologies\AUTOMATAS\App\pages"
+saving_folder= r"ruta a la carpeta de destino"
 
 #Aqui se cortan y guargan las paginas 
 c=1
